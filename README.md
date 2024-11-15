@@ -29,6 +29,8 @@ The code for creating this modified version will not be publicly available for n
   - Include more details in the engine output about the chosen book move, such as the book it originates from and the other available moves for the position.
 - **"No-Move Book" Option**:
   - A BIN book slot where, if the selected book move exists in the "no-move-book," the engine will enter MultiPV search mode to find a different move.
+- **More Book Slots**:
+  - Planned to add more BIN slots.
 
 ## Purpose and Vision
 
