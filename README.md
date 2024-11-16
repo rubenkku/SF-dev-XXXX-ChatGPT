@@ -17,6 +17,8 @@ The code for creating this modified version will not be publicly available for n
   - Moves are picked based on their exact weight percentage (`% = move weight / sum of all move weights for that position`) when the "best move" option is set to false.
   - Added a "minimum %" threshold: moves below this percentage will not be chosen.
   - This improves book variety while maintaining controlled risk factors.
+- **Enhanced Book Move Information**:
+  - Include more details in the engine output about the chosen book move, such as the book it originates from and the other available moves for the position.
 - **Streamlined Engine Output**:
   - Removed NNUE-related messages from every move.
   - Displayed book moves with their respective probabilities in the output.
@@ -25,8 +27,6 @@ The code for creating this modified version will not be publicly available for n
   - Helps prevent instant 1-ply moves under time pressure.
 
 ### Planned Functionalities:
-- **Enhanced Book Move Information**:
-  - Include more details in the engine output about the chosen book move, such as the book it originates from and the other available moves for the position.
 - **"No-Move Book" Option**:
   - A BIN book slot where, if the selected book move exists in the "no-move-book," the engine will enter MultiPV search mode to find a different move.
 - **More Book Slots**:
