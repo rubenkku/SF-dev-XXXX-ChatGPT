@@ -25,12 +25,12 @@ The code for creating this modified version will not be publicly available for n
 - **"Minimum Thinking Time" Option**:
   - Ensures the engine searches for at least a specified number of milliseconds before choosing the best move.
   - Helps prevent instant 1-ply moves under time pressure.
+- **More Book Slots**:
+  - It has been added 4 BIN Book slots in total
 
 ### Planned Functionalities:
 - **"No-Move Book" Option**:
   - A BIN book slot where, if the selected book move exists in the "no-move-book," the engine will enter MultiPV search mode to find a different move.
-- **More Book Slots**:
-  - Planned to add more BIN slots.
 
 ## Purpose and Vision
 
