@@ -12,7 +12,7 @@ The code for creating this modified version will not be publicly available for n
 
 ### Functionalities Already Implemented and Working:
 - **7-man Tablebases Integration**: Moves are made instantly by querying the tablebases, and the engine chooses the best move accordingly.
-- **BIN Book Support**: Added support for two BIN books with a "best move" option (true or false).
+- **BIN Book Support**: Added support for upto four BIN books with a "best move" option (true or false).
 - **Enhanced BIN Polybook Functionality**:
   - Moves are picked based on their exact weight percentage (`% = move weight / sum of all move weights for that position`) when the "best move" option is set to false.
   - Added a "minimum %" threshold: moves below this percentage will not be chosen.
