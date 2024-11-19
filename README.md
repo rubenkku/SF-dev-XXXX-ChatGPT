@@ -31,6 +31,8 @@ The code for creating this modified version will not be publicly available for n
 ### Planned Functionalities:
 - **"No-Move Book" Option**:
   - A BIN book slot where, if the selected book move exists in the "no-move-book," the engine will enter MultiPV search mode to find a different move.
+- **"Experience book"**:
+  - Incorporate experience or learning function, with auto-fix games lost.
 
 ## Purpose and Vision
 
