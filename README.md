@@ -12,6 +12,7 @@ The code for creating this modified version will not be publicly available for n
 
 ### Functionalities Already Implemented and Working:
 - **7-man Tablebases Integration**: Moves are made instantly by querying the tablebases, and the engine chooses the best move accordingly.
+The tablebase move picker algorithm has been revised to prioritize selecting the longest path in drawn or lost games. It aims to avoid repeated moves from the tablebases whenever possible, thereby maximizing game duration and creating time pressure for the opponent.
 - **BIN Book Support**: Added support for upto four BIN books with a "best move" option (true or false).
 - **Enhanced BIN Polybook Functionality**:
   - Moves are picked based on their exact weight percentage (`% = move weight / sum of all move weights for that position`) when the "best move" option is set to false.
