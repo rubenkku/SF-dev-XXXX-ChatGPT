@@ -23,6 +23,7 @@ The tablebase move picker algorithm has been revised to prioritize selecting the
 - **Streamlined Engine Output**:
   - Removed NNUE-related messages from every move.
   - Displayed book moves with their respective probabilities in the output.
+  - Displayed tablebases best move WDL and DTZ values and repeated moves avoided.
 - **"Minimum Thinking Time" Option**:
   - Ensures the engine searches for at least a specified number of milliseconds before choosing the best move.
   - Helps prevent instant 1-ply moves under time pressure.
