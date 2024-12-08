@@ -35,6 +35,8 @@ The tablebase move picker algorithm has been revised to prioritize selecting the
   - A BIN book slot where, if the selected book move exists in the "no-move-book," the engine will enter MultiPV search mode to find a different move.
 - **"Experience book"**:
   - Incorporate experience or learning function, with auto-fix games lost.
+- **"Chinese live book"**:
+  - Incorporate chinese live book (https://www.chessdb.cn/queryc_en/) with improved move picker algorithm, will choose best moves only (rank 2).
 
 ## Purpose and Vision
 
