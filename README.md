@@ -29,14 +29,15 @@ The tablebase move picker algorithm has been revised to prioritize selecting the
   - Helps prevent instant 1-ply moves under time pressure.
 - **More Book Slots**:
   - It has been added 4 BIN Book slots in total
+- **"ChessDB live book"**:
+  - Added ChessDB live book (https://www.chessdb.cn/queryc_en/) with improved move picker algorithm, it will choose best moves only (rank 2), sorted by winrate.
+  - Added Variety option, it will choose a move among the first X moves sorted by winrate. Also a timeout can be set (maximum time to wait server response)
 
 ### Planned Functionalities:
 - **"No-Move Book" Option**:
   - A BIN book slot where, if the selected book move exists in the "no-move-book," the engine will enter MultiPV search mode to find a different move.
 - **"Experience book"**:
   - Incorporate experience or learning function, with auto-fix games lost.
-- **"Chinese live book"**:
-  - Incorporate chinese live book (https://www.chessdb.cn/queryc_en/) with improved move picker algorithm, will choose best moves only (rank 2).
 
 ## Purpose and Vision
 
