@@ -29,10 +29,12 @@ The tablebase move picker algorithm has been revised to prioritize selecting the
   - Helps prevent instant 1-ply moves under time pressure.
 - **More Book Slots**:
   - It has been added 4 BIN Book slots in total
-- **"ChessDB live book"**:
-  - Added ChessDB live book (https://www.chessdb.cn/queryc_en/) with improved move picker algorithm, it will choose best moves only (rank 2), sorted by winrate.
-  - Added Variety option, it will choose a move among the first X moves sorted by winrate. Also a timeout can be set (maximum time to wait server response)
-  - ChessDB book functionality is automaticly disabled when there is less than 40 seconds on the clock, avoiding delays on the endgame.
+- **"ChessDB Live Book"**:
+  - Added the ChessDB Live Book (https://www.chessdb.cn/queryc_en/) with an improved move selection algorithm that chooses only the best moves (rank 2), sorted by winrate.
+  - Added a "Variety" option, allowing the selection of a move among the top X moves sorted by score.
+  - Added "Send Moves" option, it will send to ChessDB all moves that were not in the book in the first query.
+  - A timeout can be set (maximum time to wait for the server's response), as well as a retry option, which will attempt up to 10 retries if the response times out.
+  - The ChessDB book functionality is automatically disabled when there are less than 40 seconds on the clock, avoiding delays in the endgame.
 
 ### Planned Functionalities:
 - **"No-Move Book" Option**:
